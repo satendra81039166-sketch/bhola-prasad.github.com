@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to Bhola Prasad. Explore our products and get in touch with us." />
+  <title>Bhola Prasad | Your Trusted Store</title>
+  <style>
+    :root{--ink:#17211b;--green:#1f6b4a;--lime:#d9f3a5;--cream:#f7f7f0;--muted:#66736a;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    .wrap{width:min(1120px,92%);margin:auto}.topbar{background:var(--green);color:white;text-align:center;padding:8px 12px;font-size:14px}
+    header{background:rgba(247,247,240,.96);position:sticky;top:0;z-index:10;border-bottom:1px solid #e6e9df}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0}.brand{font-size:23px;font-weight:800;color:var(--green);text-decoration:none;letter-spacing:-.5px}
+    nav ul{display:flex;list-style:none;gap:26px;margin:0;padding:0}nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}nav a:hover{color:var(--green)}
+    .hero{padding:76px 0 70px;background:radial-gradient(circle at 85% 20%,#e4f3cb 0,transparent 32%),linear-gradient(135deg,#f7f7f0,#eef4e7)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px}.eyebrow{display:inline-block;background:#e3efd7;color:var(--green);padding:7px 13px;border-radius:30px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-2.5px;margin:20px 0}.hero p{font-size:18px;color:var(--muted);max-width:520px}
+    .btn{display:inline-block;background:var(--green);color:white;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700;margin:12px 10px 0 0;transition:.2s}.btn:hover{transform:translateY(-2px);background:#174f37}.btn.secondary{background:transparent;color:var(--green);border:1px solid #a9c7b2}
+    .hero-card{min-height:340px;border-radius:26px;background:linear-gradient(145deg,#2d8058,#174b35);color:white;padding:30px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 60px #174b3525;position:relative;overflow:hidden}
+    .hero-card:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff25;border-radius:50%;right:-80px;top:-70px;box-shadow:0 0 0 35px #ffffff0b,0 0 0 70px #ffffff08}
+    .hero-card .big{font-size:76px;line-height:1;font-weight:800;opacity:.95}.hero-card h2{font-size:28px;max-width:300px;margin:12px 0}.hero-card p{color:#e1f0e5;font-size:15px}
+    section{padding:72px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head h2{font-size:clamp(30px,4vw,42px);letter-spacing:-1px;margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e8eae2;border-radius:16px;padding:25px;box-shadow:0 8px 24px #1a332008}.icon{width:54px;height:54px;border-radius:14px;background:#e8f2df;display:grid;place-items:center;font-size:25px;margin-bottom:17px}.card h3{margin:0 0 8px;font-size:20px}.card p{color:var(--muted);font-size:15px;margin:0}
+    .about{background:#fff}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-box{background:#e9f2df;border-radius:22px;padding:34px;min-height:270px;display:flex;flex-direction:column;justify-content:center}.about-box strong{font-size:58px;color:var(--green);line-height:1}.about-box span{color:var(--muted);margin-top:10px}.about h2{font-size:38px;line-height:1.15;margin:0 0 15px;letter-spacing:-1px}.about p{color:var(--muted)}
+    .contact{background:#eaf1e4}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.contact-info,.contact-form{background:white;border-radius:18px;padding:28px}.contact-info h3,.contact-form h3{margin-top:0}.detail{padding:12px 0;border-bottom:1px solid #edf0e9;color:var(--muted)}.detail b{display:block;color:var(--ink);margin-bottom:3px}
+    label{display:block;font-size:14px;font-weight:700;margin:12px 0 6px}input,textarea{width:100%;border:1px solid #dfe5d9;border-radius:8px;padding:12px;font:inherit;background:#fcfdfb}textarea{min-height:110px;resize:vertical}.form-note{font-size:12px;color:var(--muted)}
+    footer{background:#14281d;color:#dbe8dd;padding:27px 0}footer .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:14px}footer a{color:#dbe8dd}
+    @media(max-width:760px){nav{flex-wrap:wrap}nav ul{gap:14px;flex-wrap:wrap}.hero{padding:48px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-card{min-height:270px}.cards{grid-template-columns:1fr}.about-grid{gap:25px}section{padding:55px 0}footer .foot{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Welcome to Bhola Prasad — Your trusted local store</div>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">Bhola Prasad<span style="color:#9abf65">.</span></a>
+      <ul><li><a href="#home">Home</a></li><li><a href="#products">Products</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Local store · Friendly service</span>
+          <h1>Welcome to<br><span style="color:var(--green)">Bhola Prasad</span></h1>
+          <p>Your neighborhood store for everyday needs. We believe in helpful service, dependable products, and making every visit easy.</p>
+          <a class="btn" href="#products">Explore Products</a><a class="btn secondary" href="#contact">Contact Us</a>
+        </div>
+        <div class="hero-card"><div class="big">BP.</div><div><h2>Everyday essentials, with a personal touch.</h2><p>Visit us or get in touch to learn more about what we offer.</p></div></div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="wrap">
+        <div class="section-head"><h2>What We Offer</h2><p>Replace these sample categories with the products and services available at your business.</p></div>
+        <div class="cards">
+          <article class="card"><div class="icon">🛍️</div><h3>Daily Essentials</h3><p>Everyday items and household necessities for your regular needs.</p></article>
+          <article class="card"><div class="icon">🌾</div><h3>Groceries & Staples</h3><p>Common grocery items and pantry staples for your home.</p></article>
+          <article class="card"><div class="icon">🤝</div><h3>Helpful Service</h3><p>Friendly assistance to help you find what you are looking for.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-box"><strong>BP</strong><span>Local service. Trusted relationships.</span></div>
+        <div><span class="eyebrow">A little about us</span><h2>A store built around the community.</h2><p>Bhola Prasad is here to make everyday shopping convenient. We value good service, honest communication, and building lasting relationships with our customers.</p><p><strong>Our promise:</strong> A welcoming experience every time you visit.</p></div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="section-head"><h2>Get in Touch</h2><p>Contact us for product details, availability, or general enquiries.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info"><h3>Contact Details</h3>
+            <div class="detail"><b>Business name</b>Bhola Prasad</div>
+            <div class="detail"><b>Address</b>Add your shop address here</div>
+            <div class="detail"><b>Phone / WhatsApp</b>Add your business phone number here</div>
+            <div class="detail"><b>Opening hours</b>Add your opening and closing times here</div>
+          </div>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('This demo form is not connected yet. Please add your email or WhatsApp details to receive messages.');">
+            <h3>Send an Enquiry</h3>
+            <label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required />
+            <label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Enter your phone number" />
+            <label for="message">Message</label><textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+            <button class="btn" type="submit" style="border:0;cursor:pointer">Send Message</button>
+            <p class="form-note">Demo form: it needs to be connected to email or a messaging service to deliver enquiries.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>© <span id="year"></span> Bhola Prasad. All rights reserved.</span><span>Made for your local business</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
